@@ -386,7 +386,7 @@ Acknowledges the execution of one or more jobs via job IDs. The node receiving t
 
 A node receiving an ACKJOB command about a job ID it does not know, will create
 a special empty job, with the state set to "acknowledged", called a "dummy ACK".
-The dummy ACK is used in order to retain the acknolwedge during a netsplit if
+The dummy ACK is used in order to retain the acknowledge during a netsplit if
 the ACKJOB is send to a node that does not have a copy of the job. When the
 partition heals, a job garbage collection will be attempted.
 
